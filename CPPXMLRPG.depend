@@ -28,3 +28,25 @@
 	<stddef.h>
 	<cstddef>
 
+1396666768 source:c:\users\josh\documents\github\cppxmlrpg\includes\tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+
+1396666871 c:\users\josh\documents\github\cppxmlrpg\includes\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+

@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1396677961 source:c:\users\josh\documents\programming\c\projects\not sure of anything\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<stdlib.h>
+	<tinyxml2.h>
+
+1396666871 c:\users\josh\documents\programming\c\projects\not sure of anything\includes\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+
+1396666768 source:c:\users\josh\documents\programming\c\projects\not sure of anything\includes\tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+

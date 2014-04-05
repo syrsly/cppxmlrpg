@@ -1,0 +1,16 @@
+<cover>
+	<name>Default Quest</name>
+	<author>Josh Maines</author>
+	<description>This is the default story used as an example of how the engine works.</description>
+</cover>
+<story>
+	<say text="a man from the eastern coastal tribe of Talacora." />
+	<say text="You were raised on the belief that the inner lands were barren," />
+	<say text="but when you found out that another tribe was thriving in the west, you decided to investigate." />
+	<say text="example text 3" />
+	<say text="example text 4" />
+	<fork>
+		This feature coming soon.
+	</fork>
+	<hurt dmg="16" notice="You just got hurt for no reason!" />
+</story>

@@ -50,3 +50,20 @@
 	<android/log.h>
 	<assert.h>
 
+1396679046 source:c:\users\josh\documents\github\cppxmlrpg\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<stdlib.h>
+	<tinyxml2.h>
+
+1453872208 source:c:\users\josh\documents\github\cppxmlrpg\dialogue.cpp
+	<string>
+	<iostream>
+	<vector>
+	<dialogue.h>
+
+1453871337 source:c:\users\josh\documents\github\cppxmlrpg\dialogue.h
+
+1453872487 c:\users\josh\documents\github\cppxmlrpg\includes\dialogue.h
+

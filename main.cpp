@@ -18,9 +18,11 @@
 #include <sstream>
 #include <stdlib.h>
 #include <tinyxml2.h>
+#include <dialogue.h>
 
 using namespace std;
 using namespace tinyxml2;
+using namespace dialogue;
 
 int playerHP,playerMaxHP;
 int timesPlayed = 0; //count how many times the player has replayed.
@@ -35,6 +37,12 @@ std::string operator+(std::string const &a, int b){
   oss<<a<<b;
   return oss.str();
 }
+// pauseForKeyPress method is used whenever we want to give the player a chance to read some text.
+void pauseForKeyPress() {
+	cout << "Enter any key to continue...\n";
+	int tmp;
+	cin >> tmp;
+}
 void waitForPlayerInput() {
     getline (cin,replayYN);
 }
@@ -47,7 +55,7 @@ void playerStatus() {
 void resetGame() {
     if (doc.LoadFile( "adventures/default.xml" ) != tinyxml2::XML_SUCCESS) {
         cout << "Cannot read XML file.";
-        waitForPlayerInput();
+        pauseForKeyPress();
         exit(0);
     }
     playerMaxHP = 10;
@@ -86,22 +94,7 @@ void say(string storyText) {
 }
 int main() {
     resetGame();
-    while (storyChild != NULL) {
-        string tempString = "";
-        if (string(storyChild->Value()) == "say") {
-            tempString += storyChild->Attribute("text");
-            say(tempString);
-        } else if (string(storyChild->Value()) == "hurt") {
-            if (storyChild->Attribute("notice") != NULL) {
-                say(tempString + storyChild->Attribute("notice") + " (HP -" + storyChild->IntAttribute( "dmg" ) + ")");
-            } else {
-                say(tempString + "HP -" + storyChild->IntAttribute( "dmg" ) + ")");
-            }
-            hurt(storyChild->IntAttribute( "dmg" ));
-        } else if (string(storyChild->Value()) == "fork") {
-            say("Fork feature coming soon.");
-        }
-        storyChild = storyChild->NextSiblingElement();
-    }
+    dialogue.DialogueTree dialogTree;
+    dialogTree.init();
     return 0;
 }

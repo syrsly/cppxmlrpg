@@ -1,6 +1,7 @@
 <cover>
 	<name>Default Quest</name>
 	<author>Josh Maines</author>
+	<authorsite>http://www.joshmaines.com</authorsite>
 	<description>This is the default story used as an example of how the engine works.</description>
 </cover>
 <story>
@@ -10,7 +11,9 @@
 	<say text="example text 3" />
 	<say text="example text 4" />
 	<fork>
-		This feature coming soon.
+		<question text="Want a biscuit?" />
+		<answer text="Yes" fork="12">
+		<answer text="No" fork="13">
 	</fork>
 	<hurt dmg="16" notice="You just got hurt for no reason!" />
 </story>
